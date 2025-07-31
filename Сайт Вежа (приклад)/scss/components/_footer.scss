@@ -1,0 +1,76 @@
+.footer {
+  padding: 32px 0;
+  background-image: url("../illustrations/footer.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-top: 2px solid var(--color-primary-dark);
+
+  &__footer-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  &__footer-nav {
+    flex-basis: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: 40%;
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__footer-menu {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display:block;
+      padding-left: 100px;
+    }
+
+  }
+
+  &__footer-address {
+       
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: 50%;
+      gap: 20px;
+    }
+  }
+
+  &__address-link {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--color-primary-dark);
+    }
+  }
+ }
+
+.footer-logomini {
+  width: 51px;
+  height: 54px;
+  @media screen and (min-width: $bp-tablet) {
+    width: 102px;
+    height: 108px;
+  }
+}
+
+
+.icon {
+  fill: var(--color-secondary-dark);
+  width: 32px;
+  height: 32px;
+  stroke: var(--color-primary-dark);
+  margin: 12px;
+
+  &:hover {
+    fill: rgb(13, 36, 36);
+  }
+}
+
